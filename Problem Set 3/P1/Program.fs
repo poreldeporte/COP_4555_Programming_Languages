@@ -20,3 +20,16 @@ let reglist = [1..5]
 let test = tolink reglist
 
 printf "%A\n" test
+
+let rec tolinktail list xs =
+    match xs with
+    |[] -> list
+    |x::[] -> N(x,list)
+    |x::xs -> let newlist = N(List.last(xs), list)
+              tolinktail newlist (x::(List.truncate (List.length xs - 1) xs))
+
+let reglist2 = [1;2;3;4;5]
+
+let test2 = tolinktail E reglist2
+
+printf "%A\n" test2
