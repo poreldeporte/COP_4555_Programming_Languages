@@ -9,3 +9,14 @@ let n2 = N(2, n3)
 
 let list = N(1, n2)
 printf "%A\n" list
+
+let rec tolink xs =
+    match xs with
+    |[] -> E
+    |x::xs -> N(x, tolink (xs))
+
+let reglist = [1..5]
+
+let test = tolink reglist
+
+printf "%A\n" test
