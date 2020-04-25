@@ -6,3 +6,8 @@ let student =
     {GPA = fun () -> (!gradept * 3.0 / !credithr);
      addGradept = fun d -> gradept := d + !gradept;
      addCredit = fun d -> credithr := d + !credithr} 
+
+student.addCredit(3.0)
+student.addGradept(4.0)
+
+printf "%A" (student.GPA())
