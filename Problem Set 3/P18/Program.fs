@@ -19,3 +19,7 @@ let conµstos (x : float<µs>) = (x * sinµs)
 //Type:(x:float<µs> -> float<s>)
 let connstos (x : float<ns>) = (x * sinns)
 //Type:(x:float<ns> -> float<s>)
+//Convert 5000 milliseconds to seconds and then to microseconds.
+let x = conmstos 5000.0<ms> |> constoµs
+printf "%A\n" x
+
