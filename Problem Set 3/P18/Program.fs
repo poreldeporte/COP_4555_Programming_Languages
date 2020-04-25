@@ -22,4 +22,9 @@ let connstos (x : float<ns>) = (x * sinns)
 //Convert 5000 milliseconds to seconds and then to microseconds.
 let x = conmstos 5000.0<ms> |> constoµs
 printf "%A\n" x
-
+//Convert 0.00000009 seconds to microseconds and to nanoseconds.
+let cons = 0.00000009<s>
+let y = constoms cons
+let z = constons cons
+printf "%A\n" y
+printf "%A\n" z
