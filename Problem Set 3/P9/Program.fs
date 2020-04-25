@@ -11,3 +11,7 @@ printf "%A\n" result
 
 printf "%A\n" result2
 
+(* 
+When called as twice succ 0, it will return 2^n, where n is the result 
+from the previous call.
+*)
