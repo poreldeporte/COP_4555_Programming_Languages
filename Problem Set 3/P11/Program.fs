@@ -12,3 +12,6 @@
             fp := !temp
             cnt := !cnt + 1
     !f
+
+let test = fib 4
+printf "%A" test
