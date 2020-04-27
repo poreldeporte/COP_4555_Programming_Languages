@@ -30,3 +30,10 @@ let test program =
     match result with 
     | [] -> failwith "Early termination or missing EOF"
     | x::xs -> if x = EOF then accept else error
+
+printf "%A" (test [IF;ID;THEN;BEGIN;PRINT;ID;SEMICOLON;PRINT;ID;END;ELSE;PRINT;ID;EOF])
+    
+printf "%A" (test [IF;ID;THEN;IF;ID;THEN;PRINT;ID;ELSE;PRINT;ID;ELSE;BEGIN;PRINT;ID;END;EOF])
+    
+//shouldn't work
+printf "%A" (test [IF;ID;THEN;BEGIN;PRINT;ID;SEMICOLON;PRINT;ID;SEMICOLON;END;ELSE;PRINT;ID;EOF])
