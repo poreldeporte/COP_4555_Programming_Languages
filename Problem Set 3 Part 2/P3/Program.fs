@@ -6,3 +6,8 @@ let rec tailmap list xs =
     |x::xs -> let newlist = list @ [helper x]
               tailmap newlist xs
     
+let list = [1;2;3]
+
+let test = tailmap list
+
+printf "%A" test
