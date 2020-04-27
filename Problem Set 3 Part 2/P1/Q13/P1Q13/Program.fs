@@ -9,3 +9,7 @@ type 'a tree =
     | Br_END of ('a tree)
     | Br_SEMICOLON of ('a tree * 'a tree)
     | Br_ID of ('a tree)
+
+let eat terminal = function 
+| [] -> failwith "SYNTAX ERROR: Empty token on EAT"
+| x::xs -> if x = terminal then xs else failwith "SYNTAX ERROR: No matching token"
