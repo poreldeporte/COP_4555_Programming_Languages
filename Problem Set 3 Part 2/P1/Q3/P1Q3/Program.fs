@@ -16,3 +16,17 @@ let rec s xs =
         | BEGIN::xs -> xs |> s |> l
         | PRINT::xs -> xs |> e
         | _ -> failwith "Not a valid token for s"
+
+and l xs =
+    match xs with
+        | [] -> failwith "premature end of data"
+        | END::xs -> xs
+        | SEMICOLON::xs -> xs |> s |> l
+        | _ -> printf "%A" (List.head xs)
+               failwith "Not a valid token for l %A"
+
+let test program =
+    let result = program |> s
+    match result with 
+    | [] -> failwith "Early termination or missing EOF"
+    | x::xs -> if x = EOF then accept else error
