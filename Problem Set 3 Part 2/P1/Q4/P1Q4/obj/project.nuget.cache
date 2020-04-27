@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "u3grJSxi7vjuTqAnJU+JWRp9rjIFZEKK/HPIzqc8nOVDsSDr9HDy+qjOx1ObpaIGXyCzOwjtZOS53q1FfVa5jg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Josh\\source\\repos\\COP_4555_Programming_Languages\\Problem Set 3 Part 2\\P1\\Q4\\P1Q4\\P1Q4.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Josh\\.nuget\\packages\\fsharp.core\\4.7.0\\fsharp.core.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
