@@ -15,3 +15,7 @@ let confttoinches (x : float<ft>) = (x * ininft)
 let concmtoinches (x : float<cm>) = (x * inincm)
 //Type:(x:float<cm> -> float<inches>)
 
+//Convert 5.5 feet to inches and then to centimeters.
+let x = confttoinches 5.5<ft> |> coninchestocm
+printf "%A\n" x
+
