@@ -11,3 +11,7 @@ let list = [1;2;3]
 let test = tailmap list
 
 printf "%A" test
+
+(*
+Time complexity is O(n^2), however can be done in O(n) time if @ is omitted.
+*)
