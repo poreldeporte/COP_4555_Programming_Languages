@@ -19,3 +19,9 @@ let concmtoinches (x : float<cm>) = (x * inincm)
 let x = confttoinches 5.5<ft> |> coninchestocm
 printf "%A\n" x
 
+//Convert 100 inches to feet and to centimeters.
+let cons = 100.0<inches>
+let y = coninchestoft cons
+let z = coninchestocm cons
+printf "%A\n" y
+printf "%A\n" z
