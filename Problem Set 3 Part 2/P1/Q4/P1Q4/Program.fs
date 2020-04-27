@@ -23,3 +23,16 @@ and t xs =
         |DIV -> advance newlist |> t
         |_ -> newlist
 
+and f xs =
+    match List.head xs with
+        |ID -> advance xs 
+        |LPAREN -> advance xs |> e |> b
+        |_ -> failwith (sprintf "Not a valid token for f %A" xs)
+
+let test_program program =
+    let result = program |> e
+    match result with 
+    | [] -> failwith "Early termination or missing EOF"
+    | x::xs -> if x = EOF then accept else error
+
+
