@@ -18,3 +18,7 @@ let test1 = revlisttail [] list
               
 printf "%A" test1
 
+(* 
+Time Complexity of revlist: O(n^2)
+Time Complexity of revlisttail: O(n)
+*)
