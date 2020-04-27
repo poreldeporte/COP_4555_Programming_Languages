@@ -9,3 +9,9 @@ let coninchestoft (x : float<inches>) = (x / ininft)
 //Type:(x:float<inches> -> float<ft>)
 let coninchestocm (x : float<inches>) = (x / inincm)
 //Type:(x:float<inches> -> float<cm>)
+
+let confttoinches (x : float<ft>) = (x * ininft)
+//Type:(x:float<ft> -> float<inches>)
+let concmtoinches (x : float<cm>) = (x * inincm)
+//Type:(x:float<cm> -> float<inches>)
+
