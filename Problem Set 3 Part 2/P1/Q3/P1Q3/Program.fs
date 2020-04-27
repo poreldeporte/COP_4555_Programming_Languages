@@ -10,3 +10,9 @@ let eat terminal = function
 
 let e = eat ID
 
+let rec s xs =
+    match xs with
+        | IF::xs -> xs |> e |> eat THEN |> s |> eat ELSE |> s
+        | BEGIN::xs -> xs |> s |> l
+        | PRINT::xs -> xs |> e
+        | _ -> failwith "Not a valid token for s"
