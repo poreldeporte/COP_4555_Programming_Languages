@@ -36,3 +36,6 @@ let test_program program =
     | x::xs -> if x = EOF then accept else error
 
 
+printf "%A" (test_program [ID;SUB;ID;MUL;ID;EOF])
+printf "%A" (test_program [ID;ADD;ID;ADD;ID;ADD;ID;EOF])
+printf "%A" (test_program [LPAREN;ID;SUB;ID;RPAREN;MUL;ID;EOF])
