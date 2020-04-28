@@ -6,3 +6,7 @@
           else 
             let newValue = value + x
             multipleSum newValue (x - 3)
+
+let test = multipleSum 0 8
+
+printf "%A" test
