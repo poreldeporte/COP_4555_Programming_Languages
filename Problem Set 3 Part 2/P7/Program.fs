@@ -9,3 +9,7 @@ let rec oddSum value x =
           else 
             let newValue = value + x
             oddSum newValue (x - 2)
+
+let test = oddSum 0 5
+
+printf "%A" test
