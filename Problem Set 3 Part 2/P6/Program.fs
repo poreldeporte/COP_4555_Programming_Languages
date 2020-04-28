@@ -1,8 +1,7 @@
-﻿// Learn more about F# at http://fsharp.org
+﻿(*
+a) subst (APP(SUCC, ID "a")) "a" (NUM 3)
 
-open System
 
-[<EntryPoint>]
-let main argv =
-    printfn "Hello World from F#!"
-    0 // return an integer exit code
+b) subst (IF (BOOL true, FUN ("a", APP (SUCC, ID "a")), FUN ("b", APP (SUCC, ID "a")))) "a" (NUM 3)
+
+*)
