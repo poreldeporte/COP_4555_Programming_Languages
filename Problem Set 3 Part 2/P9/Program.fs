@@ -6,3 +6,7 @@
           else 
             let newValue = value + counter
             divisorSum (counter - 1) newValue x
+
+let test = divisorSum 8 0 8
+
+printf "%A" test
